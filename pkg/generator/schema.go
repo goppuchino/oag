@@ -9,7 +9,8 @@ type Spec struct {
 }
 
 type PathSpec struct {
-	Summary     string   `json:"summary,omitempty" yaml:"summary,omitempty"`
-	Description string   `json:"description,omitempty" yaml:"description,omitempty"`
-	Tags        []string `json:"tags,omitempty" yaml:"tags,omitempty"`
+	Summary     string                   `json:"summary,omitempty" yaml:"summary,omitempty"`
+	Description string                   `json:"description,omitempty" yaml:"description,omitempty"`
+	Tags        []string                 `json:"tags,omitempty" yaml:"tags,omitempty"`
+	Parameters  []map[string]interface{} `json:"parameters,omitempty" yaml:"parameters,omitempty"`
 }
