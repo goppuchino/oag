@@ -13,8 +13,11 @@ Features:
 ✅ Custom template support  
 
 ```go  
-// Just annotate & generate!  
-// @openapi:path /users/{id}  
+// Just annotate & generate!
+// @method get
+// @path /users/{id}
+// @summary Get user
+// @description Get user information
 func GetUser(w http.ResponseWriter, r *http.Request) { ... }  
 ```  
 
