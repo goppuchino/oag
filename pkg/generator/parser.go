@@ -56,6 +56,7 @@ func parseAnnotations(comments []*ast.CommentGroup, spec *Spec, isMain bool) {
 	for _, commentGroup := range comments {
 		var method, path, summary, description string
 		var tags []string
+		var parameters []map[string]interface{}
 
 		for _, comment := range commentGroup.List {
 			text := strings.TrimSpace(strings.TrimPrefix(comment.Text, "//"))
@@ -196,6 +197,30 @@ func parseAnnotations(comments []*ast.CommentGroup, spec *Spec, isMain bool) {
 				} else if strings.HasPrefix(text, "@tags") {
 					tagList := strings.TrimSpace(strings.TrimPrefix(text, "@tags"))
 					tags = append(tags, strings.Split(tagList, ",")...)
+				} else if strings.HasPrefix(text, "@param") {
+					parapmContent := strings.TrimSpace(strings.TrimPrefix(text, "@param"))
+					parts := strings.SplitN(parapmContent, " ", 4) // format: name* in* required description
+					fmt.Println("parts:", parts)
+					fmt.Println("len(parts):", len(parts))
+					if len(parts) < 2 {
+						fmt.Println("Параметр @param имеет некорректный формат:", text)
+						continue
+					}
+
+					param := map[string]interface{}{
+						"name":     parts[0],
+						"in":       parts[1],
+						"required": utils.StringToBool(parts[2]),
+						"schema": map[string]interface{}{
+							"type": "string",
+						},
+					}
+
+					if len(parts) > 3 {
+						param["description"] = strings.TrimSpace(parts[3])
+					}
+
+					parameters = append(parameters, param)
 				}
 			}
 		}
@@ -204,11 +229,18 @@ func parseAnnotations(comments []*ast.CommentGroup, spec *Spec, isMain bool) {
 			if _, exists := spec.Paths[path]; !exists {
 				spec.Paths[path] = map[string]interface{}{}
 			}
-			spec.Paths[path].(map[string]interface{})[strings.ToLower(method)] = PathSpec{
+
+			methodSpec := PathSpec{
 				Summary:     summary,
 				Description: description,
 				Tags:        utils.Unique(tags),
 			}
+
+			if len(parameters) > 0 {
+				methodSpec.Parameters = parameters
+			}
+
+			spec.Paths[path].(map[string]interface{})[strings.ToLower(method)] = methodSpec
 		}
 	}
 }
