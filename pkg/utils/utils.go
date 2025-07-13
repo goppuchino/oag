@@ -1,5 +1,7 @@
 package utils
 
+import "strings"
+
 func Unique[T comparable](input []T) []T {
 	seen := make(map[T]struct{})
 	result := make([]T, 0)
@@ -12,4 +14,12 @@ func Unique[T comparable](input []T) []T {
 	}
 
 	return result
+}
+
+func StringToBool(s string) bool {
+	lower := strings.ToLower(s)
+	if lower == "true" {
+		return true
+	}
+	return false
 }
