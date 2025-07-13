@@ -1,6 +1,4 @@
-# OpenAPI Generator
-
-**OpenAPI Generator for Go**  
+# OpenAPI Generator for Go
 
 🚀 *Effortless OpenAPI Spec Generation in Go*  
 
