@@ -2,7 +2,7 @@
 
 <img align="right" width="180px" src="https://raw.githubusercontent.com/goppuchino/oag/master/assets/oag.png">
 
-A fast and lightweight tool to **generate clean, standards-compliant OpenAPI specifications** directly from your Go code. Perfect for:  
+A fast and lightweight tool to **generate clean, standards-compliant OpenAPI 3 specifications** directly from your Go code. Perfect for:  
 - Auto-documenting REST APIs 🏗️  
 - Eliminating manual spec maintenance ✨  
 - Ensuring compatibility with Swagger UI, Postman & more 🔌  
