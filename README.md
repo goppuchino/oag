@@ -1,6 +1,6 @@
 # OpenAPI Generator for Go
 
-<img align="right" width="180px" src="https://raw.githubusercontent.com/goppuchino/oag/master/assets/swaggo.png">
+<img align="right" width="180px" src="https://raw.githubusercontent.com/goppuchino/oag/master/assets/oag.png">
 
 🚀 *Effortless OpenAPI Spec Generation in Go*  
 
