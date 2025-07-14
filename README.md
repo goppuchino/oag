@@ -1,5 +1,7 @@
 # OpenAPI Generator for Go
 
+<img align="right" width="180px" src="https://raw.githubusercontent.com/goppuchino/oag/master/assets/swaggo.png">
+
 🚀 *Effortless OpenAPI Spec Generation in Go*  
 
 A fast and lightweight tool to **generate clean, standards-compliant OpenAPI specifications** directly from your Go code. Perfect for:  
