@@ -16,10 +16,6 @@ func Unique[T comparable](input []T) []T {
 	return result
 }
 
-func StringToBool(s string) bool {
-	lower := strings.ToLower(s)
-	if lower == "true" {
-		return true
-	}
-	return false
+func IsRequired(v string) bool {
+	return strings.HasPrefix(v, "isRequired")
 }
