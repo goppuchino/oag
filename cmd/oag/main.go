@@ -13,7 +13,7 @@ func main() {
 	fmt.Println(" __  __ \\__    |_  ____/")
 	fmt.Println(" _  / / /_  /| |  / __  ")
 	fmt.Println(" / /_/ /_  ___ / /_/ /  ")
-	fmt.Println(" \\____/ /_/  |_\\____/   Version:", oag.Version, "")
+	fmt.Println(" \\____/ /_/  |_\\____/   ", oag.Version)
 	fmt.Println()
 	root := "./"
 
