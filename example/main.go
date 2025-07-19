@@ -9,6 +9,7 @@ package main
 // @contact.email support@example.com
 // @license.name Apache 2.0
 // @license.identifier Apache-2.0
+// @version 2.0.1
 // @server.0.url https://development.gigantic-server.com/v1
 // @server.0.description Development server
 // @server.1.url https://{username}.gigantic-server.com:{port}/{basePath}
@@ -18,4 +19,8 @@ package main
 // @server.1.variables port.default 8433
 // @server.1.variables port.enum 8433,433
 // @server.1.variables basePath.default v1
+// @tag Auth Authorization/Registration
+// @tag Users All about Users
+// @tag Pets All about Pets
+// @tag Other
 func main() {}
