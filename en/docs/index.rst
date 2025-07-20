@@ -46,8 +46,8 @@ A fast and lightweight tool to **generate clean, standards-compliant OpenAPI 3 s
 
 .. code-block:: shell
 
-   go install github.com/goppuchino/oag
-   cd <Your Project>
-   oag
+   $ go install github.com/goppuchino/oag
+   $ cd <Your Project>
+   $ oag
 
 *Because nobody loves writing YAML by hand.* 🐹
