@@ -32,6 +32,7 @@ A fast and lightweight tool to **generate clean, standards-compliant OpenAPI 3 s
 | ✅ Custom template support
 
 .. code-block:: go
+   :linenos:
 
    // Just annotate & generate!
    // @method get
@@ -50,3 +51,6 @@ A fast and lightweight tool to **generate clean, standards-compliant OpenAPI 3 s
    oag
 
 *Because nobody loves writing YAML by hand.* 🐹
+
+.. toctree::
+   :github_url: https://github.goppuchino/oas/docs/docs/en/index.rst

@@ -30,7 +30,7 @@ html_static_path = ['_static']
 html_theme_options =  {
     'vcs_pageview_mode': 'edit',
     'language_selector': True,
-    'flyout_display': 'attached'
+    'flyout_display': 'attached',
 }
 html_context = {
     'languages': {
