@@ -5,10 +5,6 @@ build:
   tools:
     python: "3.10"
 
-branches:
-  docs:
-    active: true
-
 formats:
   - pdf
   - epub
