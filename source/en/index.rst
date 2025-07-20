@@ -40,6 +40,14 @@ A fast and lightweight tool to **generate clean, standards-compliant OpenAPI 3 s
    // @param id path isRequired User ID for get user information
    func GetUser(w http.ResponseWriter, r *http.Request) { ... }
 
+**Get started:**
+
+.. code-block:: shell
+   go install github.com/goppuchino/oag
+   cd <Your Project>
+   oag
+
+*Because nobody loves writing YAML by hand.* 🐹
 
 .. toctree::
    :maxdepth: 2

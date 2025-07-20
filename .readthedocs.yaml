@@ -8,14 +8,10 @@ build:
 formats:
   - pdf
   - epub
-  - htmlzip
 
 sphinx:
   configuration: source/conf.py
 
 python:
   install:
-    - method: pip
-      path: .
-      extra_requirements:
-        - source
+    - requirements: source/requirements.txt

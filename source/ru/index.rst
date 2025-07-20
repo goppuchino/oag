@@ -41,6 +41,15 @@ OpenAPI генератор для Go
    // @param id path isRequired User ID for get user information
    func GetUser(w http.ResponseWriter, r *http.Request) { ... }
 
+**Начало работы:**
+
+.. code-block:: shell
+   go install github.com/goppuchino/oag
+   cd <ваш проект>
+   oag
+
+*Потому что никто не любит писать YAML вручную.* 🐹
+
 
 .. toctree::
    :maxdepth: 2
