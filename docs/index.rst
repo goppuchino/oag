@@ -32,6 +32,7 @@ A fast and lightweight tool to **generate clean, standards-compliant OpenAPI 3 s
 | ✅ Custom template support
 
 .. code-block:: go
+
    // Just annotate & generate!
    // @method get
    // @path /users/{id}
@@ -43,12 +44,9 @@ A fast and lightweight tool to **generate clean, standards-compliant OpenAPI 3 s
 **Get started:**
 
 .. code-block:: shell
+
    go install github.com/goppuchino/oag
    cd <Your Project>
    oag
 
 *Because nobody loves writing YAML by hand.* 🐹
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:

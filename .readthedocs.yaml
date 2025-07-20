@@ -10,8 +10,8 @@ formats:
   - epub
 
 sphinx:
-  configuration: source/conf.py
+  configuration: docs/conf.py
 
 python:
   install:
-    - requirements: source/requirements.txt
+    - requirements: docs/requirements.txt
